@@ -28,9 +28,3 @@ subprojects {
     }
 }
 true // Needed to make the Suppress annotation work for the plugins block
-
-buildscript {
-    dependencies {
-        classpath(libs.ksp.gradle.plugin)
-    }
-}
