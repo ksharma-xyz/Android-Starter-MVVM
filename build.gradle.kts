@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.kotlinAndroid) apply false
     alias(libs.plugins.hilt) apply false
-    alias (libs.plugins.kotlin.kapt) apply false
+    alias (libs.plugins.ksp) apply false
     alias(libs.plugins.kotlin.serialization) apply false
 }
 
@@ -28,3 +28,9 @@ subprojects {
     }
 }
 true // Needed to make the Suppress annotation work for the plugins block
+
+buildscript {
+    dependencies {
+        classpath(libs.ksp.gradle.plugin)
+    }
+}
