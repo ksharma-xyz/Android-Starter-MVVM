@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.start.android.library)
     alias(libs.plugins.start.android.hilt)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.redacted)
 }
 
 android {

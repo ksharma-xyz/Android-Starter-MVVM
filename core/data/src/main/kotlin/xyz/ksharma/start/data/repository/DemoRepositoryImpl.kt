@@ -1,6 +1,7 @@
 package xyz.ksharma.start.data.repository
 
 import android.content.Context
+import android.util.Log
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
@@ -21,6 +22,10 @@ class DemoRepositoryImpl @Inject constructor(
     override suspend fun fetchData(): Flow<DemoDataModel> =
         withContext(ioDispatcher) {
             val jsonString = context.readJsonFromAssets(fileName = "demo.json")
-            return@withContext flow { emit(jsonString.parseJsonToDataModel()) }
+
+            val model = jsonString.parseJsonToDataModel()
+            Log.d("DemoRepositoryImpl", "fetchData: $model")
+
+            return@withContext flow { emit(model) }
         }
 }

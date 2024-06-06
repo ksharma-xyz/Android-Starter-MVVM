@@ -75,6 +75,7 @@ kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 cash-paparazzi = { id = "app.cash.paparazzi", version.ref = "paparazzi" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+redacted = { id = "dev.zacsweers.redacted", version = "1.9.0" }
 
 #Convention Plugins
 start-android-application = { id = "start.android.application", version = "unspecified" }
