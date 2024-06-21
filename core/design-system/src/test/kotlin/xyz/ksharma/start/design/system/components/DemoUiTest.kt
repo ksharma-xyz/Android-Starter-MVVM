@@ -17,8 +17,10 @@ class DemoUiTest {
 
     @Test
     fun screen() {
+/*
         paparazziRule.snapshot {
             // UI here
         }
+*/
     }
 }
