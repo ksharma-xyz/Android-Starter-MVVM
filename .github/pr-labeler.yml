@@ -1,0 +1,6 @@
+android:
+  - changed-files:
+      - any-glob-to-any-file: '*.kt'
+
+feature:
+  - head-branch: [ '^feature', 'feature' ]
