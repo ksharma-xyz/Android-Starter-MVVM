@@ -12,6 +12,7 @@ activity-compose = "1.9.0"
 compose-bom = "2024.06.00"
 compose-navigation = "2.7.7"
 detekt = "1.23.6"
+detektCompose = "0.4.5"
 hilt = "2.51.1"
 retrofit = "2.9.0"
 kotlinxSerializationJson = "1.7.0"
@@ -63,6 +64,10 @@ paparazzi = { group = "app.cash.paparazzi", name = "paparazzi-gradle-plugin", ve
 #BuildLogic
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+
+#CodeStyle
+detektFormat = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+detektCompose = { group = "io.nlopez.compose.rules", name = "detekt", version.ref = "detektCompose" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
