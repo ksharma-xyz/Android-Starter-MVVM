@@ -16,7 +16,7 @@ detektCompose = "0.4.5"
 grpc = "1.57.0"
 hilt = "2.51.1"
 retrofit = "2.9.0"
-kotlinxSerializationJson = "1.7.0"
+kotlinxSerializationJson = "1.7.3"
 ksp = "2.0.0-1.0.22"
 paparazzi = "1.3.4"
 
