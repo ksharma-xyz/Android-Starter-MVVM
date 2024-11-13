@@ -18,7 +18,7 @@ hilt = "2.51.1"
 retrofit = "2.11.0"
 kotlinxSerializationJson = "1.7.3"
 ksp = "2.0.0-1.0.22"
-paparazzi = "1.3.4"
+paparazzi = "1.3.5"
 
 #SDK
 minSdk = "26"
